@@ -1,10 +1,16 @@
 package org.example.entities;
 
+import jakarta.persistence.Entity;
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.boot.model.relational.Database;
 
 import javax.swing.*;
 import java.text.DateFormat;
 
+@Entity
+@Setter
+@Getter
 public class Fornecedor {
     private String forId;
     private String forRazaoSocial;
@@ -16,6 +22,7 @@ public class Fornecedor {
     private Database forDataCadastro;
     private String forObservacoes;
     private boolean forSAtivo;
+
 
     public Fornecedor(String forId, String forRazaoSocial, String forNomeFantasia, String forCnpj, String forInscricaoEstadual, String forInscricaoMunicipal, String forContatoResponsavel, Database forDataCadastro, String forObservacoes, boolean forSAtivo) {
         this.forId = forId;

@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+
 @Entity // Declara que esta classe é uma entidade JPA
 @Table(name = "livro") // Define o nome da tabela no banco de dados
 @Getter // Gerado pelo Lombok para getters
