@@ -7,6 +7,11 @@ import java.util.Objects;
  * Representa um cliente no sistema.
  */
 public class Cliente {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long proid;
+
     private String cliId; // Identificador único do cliente
     private String cliNome; // Nome completo do cliente
     private String cliCpf; // CPF do cliente
